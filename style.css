@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap');
+
+:root{
+    --verde: #4ADE80;
+    --verde-escuro: #16A34A;
+    --fundo: #0A0F0A;
+    --fundo-card: #111A11;
+    --borda: #1F3320;
+    --texto: #D1FAE5;
+    --esmaecido: #6B7280;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(ellipse at 20% 20%, rgba(74, 222, 128, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(22, 163, 74, 0.05) 0%, transparent 60%);
+}
+
+.navbar {
+    background: rgba(10, 15, 10, 0.9);
+    border-bottom: 1px solid var(--borda);
+    backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+    font-family: "Press Sart 2P", monospace;
+    font-size: 0.85rem !important;
+    color: var(--verde) !important;
+    letter-spacing: 1px;
+}
