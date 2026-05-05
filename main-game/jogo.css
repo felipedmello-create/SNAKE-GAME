@@ -77,3 +77,53 @@ body {
     color: var(--verde);
     line-height: 1.4;
 }
+
+.arena {
+    position: relative;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(var(--colunas), var(--tamanho-celula));
+    grid-template-rows: repeat(var(--colunas), var(--tamanho-celula));
+    background: var(--fundo-grade);
+    border: 2px solid var(--borda);
+    border-radius: 4px;
+    gap: 1px;
+    padding: 1px;
+    background-image:
+        linear-gradient(var(--borda) 1px, transparent 1px),
+        linear-gradient(90deg, var(--borda) 1px, transparent 1px);
+    background-size: calc(var(--tamanho-celula) + 1px) calc(var(--tamanho-celula) + 1px);
+}
+
+.celula {
+    width: var(--tamanho-celula);
+    height: var(--tamanho-celula);
+    border-radius: 2px;
+    transition: background-color 0.05s;
+}
+
+.celula.cobra {
+    background-color: var(--verde);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(74, 222, 128, 0.4);
+}
+
+.celula.cabeca {
+    background-color: var(--verde-cabeca);
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(134, 239, 172, 0.7);
+}
+
+.calula.comida {
+    background-color: var(--comida);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(248, 113, 113, 0.6);
+    animation: pulsar 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulsar {
+    from{transform: scale(0.85);}
+    to{transform: scale(1.05);}
+}
