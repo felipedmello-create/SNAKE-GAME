@@ -91,6 +91,7 @@ body {
     border-radius: 4px;
     gap: 1px;
     padding: 1px;
+<<<<<<< HEAD
     background-image:
         linear-gradient(var(--borda) 1px, transparent 1px),
         linear-gradient(90deg, var(--borda) 1px, transparent 1px);
@@ -126,4 +127,10 @@ body {
 @keyframes pulsar {
     from{transform: scale(0.85);}
     to{transform: scale(1.05);}
+=======
+    background-image: 
+        linear-gradient(var(--borda) 1px, transparent 1px),
+        linear-gradient(90deg, var(--borda) 1px, transparent 1px);
+    background-size: calc(var(--tamanho-celula) + 1px) calc(var(--tamanho-celula) + 1px);
+>>>>>>> 0577a7706f66351f8d74cba04e2c326f4d302aca
 }
