@@ -53,4 +53,5 @@ function renderizar() {
     for (let i = 1; i < cobra.length; i++) {
         celulas[cobra[i].y][cobra[i].x].classList.add('cobra');
     }
+    celulas[cobra[0].y[cobra[0].x].classList.add('cabeca')];
 }
